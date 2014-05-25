@@ -21,6 +21,9 @@
 		35926AE71931D21400534E40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35926AC91931D21400534E40 /* UIKit.framework */; };
 		35926AEF1931D21400534E40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35926AED1931D21400534E40 /* InfoPlist.strings */; };
 		35926AF11931D21400534E40 /* classProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35926AF01931D21400534E40 /* classProjectTests.m */; };
+		35926AFF19328EA000534E40 /* ebBlogPostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35926AFE19328EA000534E40 /* ebBlogPostTableViewCell.m */; };
+		35926B021932904800534E40 /* ebBlogPostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35926B011932904800534E40 /* ebBlogPostModel.m */; };
+		35926B071932A8F300534E40 /* ebCreatePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35926B061932A8F300534E40 /* ebCreatePostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		35926AEC1931D21400534E40 /* classProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "classProjectTests-Info.plist"; sourceTree = "<group>"; };
 		35926AEE1931D21400534E40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35926AF01931D21400534E40 /* classProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = classProjectTests.m; sourceTree = "<group>"; };
+		35926AFD19328EA000534E40 /* ebBlogPostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebBlogPostTableViewCell.h; sourceTree = "<group>"; };
+		35926AFE19328EA000534E40 /* ebBlogPostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ebBlogPostTableViewCell.m; sourceTree = "<group>"; };
+		35926B001932904800534E40 /* ebBlogPostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebBlogPostModel.h; sourceTree = "<group>"; };
+		35926B011932904800534E40 /* ebBlogPostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ebBlogPostModel.m; sourceTree = "<group>"; };
+		35926B051932A8F300534E40 /* ebCreatePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebCreatePostViewController.h; sourceTree = "<group>"; };
+		35926B061932A8F300534E40 /* ebCreatePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ebCreatePostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +121,9 @@
 		35926ACB1931D21400534E40 /* classProject */ = {
 			isa = PBXGroup;
 			children = (
-				35926AD41931D21400534E40 /* ebAppDelegate.h */,
-				35926AD51931D21400534E40 /* ebAppDelegate.m */,
-				35926AD71931D21400534E40 /* Main.storyboard */,
-				35926ADA1931D21400534E40 /* ebViewController.h */,
-				35926ADB1931D21400534E40 /* ebViewController.m */,
+				35926AFC193289E200534E40 /* Models */,
+				35926AFB193289D200534E40 /* Views */,
+				35926AFA193289C500534E40 /* Controllers */,
 				35926ADD1931D21400534E40 /* Images.xcassets */,
 				35926ACC1931D21400534E40 /* Supporting Files */,
 			);
@@ -126,6 +133,8 @@
 		35926ACC1931D21400534E40 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				35926AD41931D21400534E40 /* ebAppDelegate.h */,
+				35926AD51931D21400534E40 /* ebAppDelegate.m */,
 				35926ACD1931D21400534E40 /* classProject-Info.plist */,
 				35926ACE1931D21400534E40 /* InfoPlist.strings */,
 				35926AD11931D21400534E40 /* main.m */,
@@ -150,6 +159,36 @@
 				35926AED1931D21400534E40 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35926AFA193289C500534E40 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35926ADA1931D21400534E40 /* ebViewController.h */,
+				35926ADB1931D21400534E40 /* ebViewController.m */,
+				35926B051932A8F300534E40 /* ebCreatePostViewController.h */,
+				35926B061932A8F300534E40 /* ebCreatePostViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		35926AFB193289D200534E40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35926AD71931D21400534E40 /* Main.storyboard */,
+				35926AFD19328EA000534E40 /* ebBlogPostTableViewCell.h */,
+				35926AFE19328EA000534E40 /* ebBlogPostTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		35926AFC193289E200534E40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35926B001932904800534E40 /* ebBlogPostModel.h */,
+				35926B011932904800534E40 /* ebBlogPostModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35926AFF19328EA000534E40 /* ebBlogPostTableViewCell.m in Sources */,
+				35926B021932904800534E40 /* ebBlogPostModel.m in Sources */,
 				35926ADC1931D21400534E40 /* ebViewController.m in Sources */,
+				35926B071932A8F300534E40 /* ebCreatePostViewController.m in Sources */,
 				35926AD21931D21400534E40 /* main.m in Sources */,
 				35926AD61931D21400534E40 /* ebAppDelegate.m in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  ebViewController.h
+//  ebCreatePostViewController.h
 //  classProject
 //
 //  Created by Evan Baumgardner on 5/25/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ebViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-
-@property NSMutableArray *blogPosts;
+@interface ebCreatePostViewController : UIViewController
 
 @end
